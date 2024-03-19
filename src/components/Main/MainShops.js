@@ -7,6 +7,9 @@ import { useDispatch } from "react-redux";
 import { uiActions } from "../../store/uiSlice";
 
 import women_1 from "../../assets/women-1.jpg";
+import men_1 from "../../assets/men-1.jpg";
+import girl_1 from "../../assets/girl-6.jpg";
+import boy_1 from "../../assets/boy-5.jpg";
 
 const MainShops = () => {
   const dispatch = useDispatch();
@@ -27,17 +30,17 @@ const MainShops = () => {
         />
         <MainShop
           mainTitle="Men"
-          image={women_1}
+          image={men_1}
           onListHandler={() => productListHandler("mens_category")}
         />
         <MainShop
           mainTitle="Girls"
-          image={women_1}
+          image={girl_1}
           onListHandler={() => productListHandler("girls_category")}
         />
         <MainShop
           mainTitle="Boys"
-          image={women_1}
+          image={boy_1}
           onListHandler={() => productListHandler("boys_category")}
         />
       </div>
