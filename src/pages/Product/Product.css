@@ -11,9 +11,8 @@
   color: #031424;
 }
 
-.product__container:hover {
-  background-color: #30415d;
-  color: whitesmoke;
+.product__container button {
+  height: auto;
 }
 
 .product__container:active {
@@ -35,6 +34,10 @@
 .product__price {
   margin-top: 1rem;
 }
+
+/* .wishlist-display {
+  display: none;
+} */
 
 @media only screen and (max-width: 48rem) {
   .product {

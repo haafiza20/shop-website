@@ -13,6 +13,7 @@ import "./App.css";
 import { useStateValue } from "./store/AuthContext/authContext";
 import OrdersDetail from "./components/Header/Orders/OrdersDetail";
 import OrdersShow from "./components/Header/Orders/OrdersShow";
+import WishList from "./components/Header/Wishlist/WishList";
 import Spinner from "./components/UI/Spinner";
 
 
@@ -68,12 +69,16 @@ const App = () => {
           element={user ? <OrdersDetail /> : <Navigate to="/login" />}
         />
         <Route
+          path="/wishlist"
+          element={<WishList />}
+        />
+        <Route
           path="orders/:ordersDetail"
           element={user ? <OrdersShow /> : <Navigate to="/login" />}
         />
       </Routes>
     </>
-    
+
   );
 };
 export default App;

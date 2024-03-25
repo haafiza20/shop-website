@@ -1,0 +1,44 @@
+.wishlist-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.products,
+.wishlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.product h3 {
+  margin-top: 0;
+}
+
+.heart-icon {
+  background: none;
+}
+
+.heart-icon:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.heart-icon.clicked {
+  color: red;
+  cursor: pointer;
+}
+
+
+
+.product button {
+  background-color: transparent;
+}
+
+.product button:hover {
+  color: red
+}
