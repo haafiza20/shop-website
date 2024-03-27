@@ -1,0 +1,73 @@
+.welc{
+    margin: 0;
+    padding: 0;
+    background-color:bisque;
+    color: #a84bb0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 70px;
+    margin-top: 30px;
+}
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Shopaholic";
+    color: #a03b7b;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #949fb5;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Welcome To Shopaholic ..!";
+    }
+    21%,40%{
+        content: "Step into style Heaven";
+    }
+    41%,60%{
+        content: " At Pondicherry's Premier";
+    }
+    61%,80%{
+        content: "  Clothing Destination";
+    }
+    81%,100%{ 
+        content: " Where Fashion meets Elegance!";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}

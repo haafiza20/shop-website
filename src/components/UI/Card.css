@@ -4,17 +4,17 @@
   align-items: flex-start;
   padding: 1.2rem;
   height: 100%;
-  background-color: #30415d;
+  background-color: #190927;
   width: 20rem;
 }
 
 .card>button:hover {
-  background-color: #240310;
+  background-color: #031424;
   cursor: pointer;
 }
 
 .card>button:active {
-  background-color: #30415d;
+  background-color: #69305e;
 }
 
 .card>button>h2 {

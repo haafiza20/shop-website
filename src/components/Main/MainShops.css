@@ -1,10 +1,50 @@
-.mainShops{
+.mainShops {
   width: 100%;
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.mainShops__container {
+.card {
+  color: rgb(142, 71, 156);
   display: flex;
   justify-content: space-between;
   margin: 1.2rem 0;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 10px 10px 15px #7f8080;
+  position: relative;
+  margin: 10px;
 
+}
+
+.mainShops_container .card image {
+  position: relative;
+  max-width: 100%;
+  transition: 0.25s ease;
+}
+
+.card_image:hover {
+  transform: scale(1.1);
+}
+
+.mainShops .card mainTitle {
+  text-align: center;
+}
+
+.mainShops .logo {
+  padding-right: 400px;
+}
+
+.mainShops .logo img {
+  width: 60%;
+  height: 30%;
+  padding-top: 40px;
+  position: relative;
+  max-width: 100%;
+  transition: 0.25s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
 }

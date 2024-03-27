@@ -25,7 +25,38 @@
   display: flex;
 }
 
-.header__right > div {
+.header__right>div {
+  margin-right: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  position: sticky;
+  background-color: transparent;
+}
+
+.header__logo {
+  transform: scale(1.36);
+  height: 3.6rem;
+  width: 3.6rem;
+  margin-left: 2.5rem;
+}
+
+.header__logo:hover {
+  cursor: pointer;
+}
+
+.header__logo:active {
+  transform: scale(1.4);
+}
+
+.header__right {
+  display: flex;
+}
+
+.header__right>div {
   margin-right: 1rem;
 }
 
@@ -34,15 +65,16 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: whitesmoke;
-  background-color: #031424;
+  color: rgb(151, 63, 159);
+  ;
+  background-color: transparent;
   height: 100%;
   width: 5.4rem;
   font-size: 1.1rem;
 }
 
 .wishlist__link:hover {
-  outline: 0.1rem solid whitesmoke;
+  outline: 0.1rem solid rgb(151, 63, 159);
   cursor: pointer;
 }
 
@@ -56,10 +88,44 @@
     height: 2rem;
     width: 2rem;
   }
+
   .header__right {
     margin-right: -1.2rem;
   }
-  .header__right > div {
+
+  .header__right>div {
+    margin-left: -0.8rem;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  .header__logo {
+    margin-left: -0.8rem;
+    height: 1.5rem;
+    width: 1.1rem;
+  }
+
+  .header__right {
+    margin-right: -1.2rem;
+  }
+
+  .header__right>div {
+    margin-left: -0.8rem;
+  }
+}
+
+@media only screen and (max-width: 64rem) {
+  .header__logo {
+    margin-left: -0.5rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .header__right {
+    margin-right: -1.2rem;
+  }
+
+  .header__right>div {
     margin-left: -0.8rem;
   }
 }
@@ -70,10 +136,12 @@
     height: 1.1rem;
     width: 1.1rem;
   }
+
   .header__right {
     margin-right: -1.2rem;
   }
-  .header__right > div {
+
+  .header__right>div {
     margin-left: -0.8rem;
   }
 }

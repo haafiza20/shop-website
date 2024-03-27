@@ -23,26 +23,28 @@ const MainShops = () => {
   return (
     <div className="mainShops">
       <div className="mainShops__container">
-        <MainShop
-          mainTitle="Women"
-          image={women_1}
-          onListHandler={() => productListHandler("womens_category")}
-        />
-        <MainShop
-          mainTitle="Men"
-          image={men_1}
-          onListHandler={() => productListHandler("mens_category")}
-        />
-        <MainShop
-          mainTitle="Girls"
-          image={girl_1}
-          onListHandler={() => productListHandler("girls_category")}
-        />
-        <MainShop
-          mainTitle="Boys"
-          image={boy_1}
-          onListHandler={() => productListHandler("boys_category")}
-        />
+        <div className="card">
+          <MainShop
+            mainTitle="Women"
+            image={women_1}
+            onListHandler={() => productListHandler("womens_category")}
+          />
+          <MainShop
+            mainTitle="Men"
+            image={men_1}
+            onListHandler={() => productListHandler("mens_category")}
+          />
+          <MainShop
+            mainTitle="Family"
+            image={girl_1}
+            onListHandler={() => productListHandler("girls_category")}
+          />
+          <MainShop
+            mainTitle="Boutique"
+            image={boy_1}
+            onListHandler={() => productListHandler("boys_category")}
+          />
+        </div>
       </div>
     </div>
   );

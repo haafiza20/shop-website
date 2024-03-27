@@ -10,7 +10,7 @@ import { useLocation } from "react-router-dom";
 import MainProducts from "./MainProducts";
 import Footer from "../Footer/Footer";
 import Product from "../../pages/Product/Product";
-
+import Welcome from "./welcome";
 const Main = () => {
   const dispatch = useDispatch();
   const location = useLocation();
@@ -23,11 +23,11 @@ const Main = () => {
     <>
       <div className="main">
         <div className="main__container">
+          <Welcome />
           <Carousel />
           <MainShops />
-          {/* <Product /> */}
-          <PopularProducts />
-          <MainProducts />
+       {/* <Product /> */}
+          
         </div>
       </div>
       <Footer />

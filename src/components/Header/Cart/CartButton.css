@@ -4,11 +4,11 @@
   width: 5.4rem;
   align-items: center;
   justify-content: center;
-  background-color: #031424;
+  background-color:transparent;
 }
 
 .cartButton:hover {
-  outline: 0.1rem solid whitesmoke;
+  outline: 0.1rem solid rgb(143, 54, 126);
   cursor: pointer;
 }
 
@@ -18,11 +18,11 @@
 
 .cartButton__icon {
   margin-right: 0.6rem;
-  color: whitesmoke;
+  color: rgb(151, 63, 159);
 }
 
 .cartButton__score {
-  color: whitesmoke;
+  color: rgb(164, 44, 138);
   font-size: 1.1rem;
 }
 

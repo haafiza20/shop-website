@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Header.css";
 
-import HeaderLogo from "../../assets/crown.png";
+import HeaderLogo from "../../assets/logo.png";
 
 import Searchbar from "./Searchbar/Searchbar";
 import Account from "./Account/Account";

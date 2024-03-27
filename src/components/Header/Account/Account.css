@@ -1,11 +1,11 @@
 .account {
   height: 100%;
   width: 5.4rem;
-  background-color: #031424;
+  background-color:transparent;
 }
 
 .account:hover {
-  outline: 0.1rem solid whitesmoke;
+  outline: 0.1rem solid rgb(158, 78, 145);
   cursor: pointer;
 }
 
@@ -14,12 +14,12 @@
 }
 
 .account__userName {
-  color: white;
+  color: rgb(122, 48, 105);
 }
 
 .account__login {
   font-size: 1.1rem;
-  color: whitesmoke;
+  color: rgb(143, 56, 124);
 }
 
 @media only screen and (max-width: 64rem) {

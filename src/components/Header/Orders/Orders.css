@@ -3,15 +3,15 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: whitesmoke;
-  background-color: #031424;
+  color: rgb(151, 63, 159);;
+  background-color:transparent;
   height: 100%;
   width: 5.4rem;
   font-size: 1.1rem;
 }
 
 .orders__link:hover {
-  outline: 0.1rem solid whitesmoke;
+  outline: 0.1rem solid  rgb(151, 63, 159);
   cursor: pointer;
 }
 
@@ -37,5 +37,3 @@
     font-size: 0.4rem;
   }
 }
-
-

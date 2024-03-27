@@ -3,9 +3,10 @@ import { Slide } from "react-slideshow-image";
 
 import "react-slideshow-image/dist/styles.css";
 
-import img1 from "../../assets/carosel1.jpg";
-import img2 from "../../assets/carosel2.jpg";
-import img3 from "../../assets/carousel.jpg";
+import img1 from "../../assets/car.jpg";
+import img2 from "../../assets/img2.jpg";
+import img3 from "../../assets/img3.jpg";
+import shadows from "@mui/material/styles/shadows";
 
 const Carousel = () => {
   const style = {
@@ -15,7 +16,7 @@ const Carousel = () => {
     width: "100%",
     borderRadius: "40px 40px 0 0",
     marginTop: "2rem",
-
+    
   };
 
   return (

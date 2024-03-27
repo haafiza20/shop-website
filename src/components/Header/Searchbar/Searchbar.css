@@ -1,5 +1,7 @@
 .searchbar__search {
   display: flex;
+  margin-top: 10px;
+  padding-top: 20px;
 }
 
 .searchBar__search__onFocus {
@@ -18,7 +20,7 @@
 }
 
 .searchbar__button {
-  background-color: #cf6766;
+  background-color: #f2e8e7;
 }
 
 .searchbar__button:hover {
