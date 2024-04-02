@@ -70,7 +70,7 @@ const App = () => {
         />
         <Route
           path="/wishlist"
-          element={<WishList />}
+          element={user ? <WishList /> : <Navigate to="/login" />}
         />
         <Route
           path="orders/:ordersDetail"

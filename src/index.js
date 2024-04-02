@@ -10,15 +10,15 @@ import { StateProvider } from "./store/AuthContext/authContext";
 import reducer, { initialState } from "./store/AuthContext/reducer";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <StateProvider initialState={initialState} reducer={reducer}>
-      <Provider store={store}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </Provider>
-    </StateProvider>
-  </React.StrictMode>,
+
+  <StateProvider initialState={initialState} reducer={reducer}>
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
+  </StateProvider>
+  ,
   document.getElementById("root")
 );
 

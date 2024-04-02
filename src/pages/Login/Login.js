@@ -1,6 +1,7 @@
 import React from "react";
 
-import { auth, provider } from "../../firebase";
+import { auth, provider, db } from "../../firebase";
+import { collection, doc, setDoc, getDoc } from "firebase/firestore/lite";
 
 import "./Login.css";
 import logo from "../../assets/crown.png";
@@ -17,11 +18,26 @@ const Login = () => {
   const loginButtonHandler = () => {
     auth
       .signInWithPopup(provider)
-      .then((result) => {
+      .then(async (result) => {
+        console.log(result.user);
         dispatch({
           type: actionTypes.SET_USER,
           user: result.user,
         });
+        // check if user already exists in collection
+        const docRef = doc(collection(db, "users"), result.user.uid);
+        const docSnap = await getDoc(docRef);
+
+        if (!docSnap.exists()) {
+          // user does not exist, add new document with generated id
+          await setDoc(docRef, {
+            name: result.user.displayName,
+            email: result.user.email,
+          });
+          console.log("user added in firestore");
+        } else {
+          console.log("user already exists in firestore");
+        }
         navigate("/home", { replace: true });
       })
       .catch((error) => alert(error.message));

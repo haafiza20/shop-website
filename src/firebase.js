@@ -5,13 +5,13 @@ import { getFirestore } from "firebase/firestore/lite";
 import "firebase/compat/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDG9TVNh4fPuAC8RfUvpy6TTSYtKxEfSgA",
-  authDomain: "shopapp-a32a8.firebaseapp.com",
-  projectId: "shopapp-a32a8",
-  storageBucket: "shopapp-a32a8.appspot.com",
-  messagingSenderId: "817674490643",
-  appId: "1:817674490643:web:fe76f5b6f14fabb4be40e6",
-  measurementId: "G-LN6Y2YLHJW"
+  apiKey: "AIzaSyD9_7-TcSFrQHm_f6zSen4wBQC_QCsIqvE",
+  authDomain: "shop-app-v2-8f1ee.firebaseapp.com",
+  projectId: "shop-app-v2-8f1ee",
+  storageBucket: "shop-app-v2-8f1ee.appspot.com",
+  messagingSenderId: "993977164660",
+  appId: "1:993977164660:web:5d9e17975fbd7ef2e90221",
+  measurementId: "G-9LTNG09RGG"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
