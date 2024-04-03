@@ -8,6 +8,7 @@ import Login from "./pages/Login/Login";
 import Payment from "./pages/Payment/Payment";
 import ProductDetail from "./pages/Product/ProductDetail";
 import Products from "./pages/Product/Products";
+import AddProducts from "./pages/Product/AddProducts";
 
 import "./App.css";
 import { useStateValue } from "./store/AuthContext/authContext";
@@ -76,6 +77,7 @@ const App = () => {
           path="orders/:ordersDetail"
           element={user ? <OrdersShow /> : <Navigate to="/login" />}
         />
+        <Route path="/add-products" element={<AddProducts/>} />
       </Routes>
     </>
 
