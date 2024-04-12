@@ -9,11 +9,12 @@ import googleLogo from "../../assets/google.png";
 
 import { actionTypes } from "../../store/AuthContext/reducer";
 import { useStateValue } from "../../store/AuthContext/authContext";
-import { useNavigate } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 
 const Login = () => {
   const [{ user }, dispatch] = useStateValue();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const loginButtonHandler = () => {
     auth
@@ -38,7 +39,8 @@ const Login = () => {
         } else {
           console.log("user already exists in firestore");
         }
-        navigate("/home", { replace: true });
+        let { from } = location.state || { from: { pathname: "/home" } };
+        navigate(from);
       })
       .catch((error) => alert(error.message));
   };

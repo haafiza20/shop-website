@@ -3,12 +3,14 @@ import Product from "./Product";
 
 
 
-const Products = () => {
- 
+const Products = ({ user }) => {
+
 
   return (
     <div>
-      <Product/>
+      <Product
+        user={user}
+      />
     </div>
   );
 };

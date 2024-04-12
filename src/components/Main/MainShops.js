@@ -27,22 +27,22 @@ const MainShops = () => {
           <MainShop
             mainTitle="Women"
             image={women_1}
-            onListHandler={() => productListHandler("womens_category")}
+            onListHandler={() => productListHandler("Products")}
           />
           <MainShop
             mainTitle="Men"
             image={men_1}
-            onListHandler={() => productListHandler("mens_category")}
+            onListHandler={() => productListHandler("Products")}
           />
           <MainShop
             mainTitle="Family"
             image={girl_1}
-            onListHandler={() => productListHandler("girls_category")}
+            onListHandler={() => productListHandler("Products")}
           />
           <MainShop
             mainTitle="Boutique"
             image={boy_1}
-            onListHandler={() => productListHandler("boys_category")}
+            onListHandler={() => productListHandler("Products")}
           />
         </div>
       </div>

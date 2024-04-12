@@ -35,7 +35,7 @@ const App = () => {
         <Route path="/home" element={existSpinner ? <Spinner /> : <Main />} />
         <Route
           path="/:products"
-          element={existSpinner ? <Spinner /> : <Products />}
+          element={existSpinner ? <Spinner /> : <Products user={user}/>}
         />
         <Route path="/:products/:product" element={<ProductDetail />} />
         <Route
@@ -71,7 +71,7 @@ const App = () => {
         />
         <Route
           path="/wishlist"
-          element={user ? <WishList /> : <Navigate to="/login" />}
+          element={user ? <WishList/> : <Navigate to="/login" />}
         />
         <Route
           path="orders/:ordersDetail"
