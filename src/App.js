@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Cart from "./components/Header/Cart/Cart";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
@@ -24,6 +24,7 @@ const App = () => {
   const existSpinner = useSelector((state) => state.ui.spinner);
 
   const [{ user }, dispatcha] = useStateValue();
+  let location = useLocation();
 
 
 
@@ -35,7 +36,7 @@ const App = () => {
         <Route path="/home" element={existSpinner ? <Spinner /> : <Main />} />
         <Route
           path="/:products"
-          element={existSpinner ? <Spinner /> : <Products user={user}/>}
+          element={existSpinner ? <Spinner /> : <Products user={user} />}
         />
         <Route path="/:products/:product" element={<ProductDetail />} />
         <Route
@@ -71,13 +72,13 @@ const App = () => {
         />
         <Route
           path="/wishlist"
-          element={user ? <WishList/> : <Navigate to="/login" />}
+          element={user ? <WishList user={user} /> : <Navigate to="/login" state={{ from: "/wishlist" }} />}
         />
         <Route
           path="orders/:ordersDetail"
           element={user ? <OrdersShow /> : <Navigate to="/login" />}
         />
-        <Route path="/add-products" element={<AddProducts/>} />
+        <Route path="/add-products" element={<AddProducts />} />
       </Routes>
     </>
 

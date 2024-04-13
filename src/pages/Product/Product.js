@@ -47,6 +47,8 @@ const Product = ({ user }) => {
     console.log(category)
   }, [categoryName]);
 
+  console.log("category_name ", categoryName)
+
   const addToWishlist = async (product) => {
     console.log("product", product)
     // check if product already added in wishlis
